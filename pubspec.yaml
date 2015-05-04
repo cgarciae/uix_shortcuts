@@ -1,7 +1,8 @@
 name: uix_shortcuts
-version: 0.0.1
+version: 0.0.13
 author: Cristian Garcia <cgarcia.e88@gmail.com>
 description: Shortcuts for building uix components
+homepage: https://github.com/cgarciae/uix_shortcuts
 environment:
   sdk: '>=1.0.0 <2.0.0'
 dependencies:

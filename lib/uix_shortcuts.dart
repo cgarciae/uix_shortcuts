@@ -2,6 +2,17 @@ library uix.shortcuts;
 
 import 'package:uix/uix.dart';
 
+//Root
+VNode root({String type, Map<String, String> attrs, Map<String, String> style,
+    List<String> classes, List<VNode> children, bool content: false}) => new VNode.root(
+        type: type,
+        attrs: attrs,
+        style: style,
+        classes: classes,
+        children: children,
+        content: content);
+
+//Elements
 VNode a({Object key, String type, Map attrs, Map style, List classes,
     List children, bool content: false}) => new VNode.element('a',
     key: key,
@@ -153,7 +164,7 @@ VNode br({Object key, String type, Map attrs, Map style, List classes,
     content: content);
 
 VNode button({Object key, String type, Map attrs, Map style, List classes,
-    List children, bool content: false}) => new VNode.element(' button',
+    List children, bool content: false}) => new VNode.element('button',
     key: key,
     type: type,
     attrs: attrs,
@@ -293,7 +304,7 @@ VNode dialog({Object key, String type, Map attrs, Map style, List classes,
     content: content);
 
 VNode div({Object key, String type, Map attrs, Map style, List classes,
-    List children, bool content: false}) => new VNode.element(' div',
+    List children, bool content: false}) => new VNode.element('div',
     key: key,
     type: type,
     attrs: attrs,
@@ -453,7 +464,7 @@ VNode h6({Object key, String type, Map attrs, Map style, List classes,
     content: content);
 
 VNode head({Object key, String type, Map attrs, Map style, List classes,
-    List children, bool content: false}) => new VNode.element(' head',
+    List children, bool content: false}) => new VNode.element('head',
     key: key,
     type: type,
     attrs: attrs,
@@ -613,7 +624,7 @@ VNode main({Object key, String type, Map attrs, Map style, List classes,
     content: content);
 
 VNode map({Object key, String type, Map attrs, Map style, List classes,
-    List children, bool content: false}) => new VNode.element(' map',
+    List children, bool content: false}) => new VNode.element('map',
     key: key,
     type: type,
     attrs: attrs,
@@ -743,7 +754,7 @@ VNode output({Object key, String type, Map attrs, Map style, List classes,
     content: content);
 
 VNode p({Object key, String type, Map attrs, Map style, List classes,
-    List children, bool content: false}) => new VNode.element(' p',
+    List children, bool content: false}) => new VNode.element('p',
     key: key,
     type: type,
     attrs: attrs,
@@ -903,7 +914,7 @@ VNode source({Object key, String type, Map attrs, Map style, List classes,
     content: content);
 
 VNode span({Object key, String type, Map attrs, Map style, List classes,
-    List children, bool content: false}) => new VNode.element(' span',
+    List children, bool content: false}) => new VNode.element('span',
     key: key,
     type: type,
     attrs: attrs,
@@ -1043,7 +1054,7 @@ VNode time({Object key, String type, Map attrs, Map style, List classes,
     content: content);
 
 VNode title({Object key, String type, Map attrs, Map style, List classes,
-    List children, bool content: false}) => new VNode.element(' title',
+    List children, bool content: false}) => new VNode.element('title',
     key: key,
     type: type,
     attrs: attrs,
@@ -1114,6 +1125,179 @@ VNode video({Object key, String type, Map attrs, Map style, List classes,
 
 VNode wbr({Object key, String type, Map attrs, Map style, List classes,
     List children, bool content: false}) => new VNode.element('wbr',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+//SVG
+VNode circle({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('circle',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode defs({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('defs',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode ellipse({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('ellipse',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode g({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('g',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode line({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('line',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode linearGradient({Object key, String type, Map attrs, Map style,
+    List classes, List children, bool content: false}) => new VNode.svgElement(
+    'linearGradient',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode mask({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('mask',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode path({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('path',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode pattern({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('pattern',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode polygon({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('polygon',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode polyline({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('polyline',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode radialGradient({Object key, String type, Map attrs, Map style,
+    List classes, List children, bool content: false}) => new VNode.svgElement(
+    'radialGradient',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode rect({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('rect',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode stop({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('stop',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode svg({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('svg',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode text({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('text',
+    key: key,
+    type: type,
+    attrs: attrs,
+    style: style,
+    classes: classes,
+    children: children,
+    content: content);
+
+VNode tspan({Object key, String type, Map attrs, Map style, List classes,
+    List children, bool content: false}) => new VNode.svgElement('tspan',
     key: key,
     type: type,
     attrs: attrs,
